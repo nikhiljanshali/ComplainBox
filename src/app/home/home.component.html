@@ -1,0 +1,2 @@
+<app-overview [messageReceiveFromChild]="getChildMessage"></app-overview>
+<app-salesbox [bookList]="books" (sendMeToParent)="receiveMessage($event)"></app-salesbox>

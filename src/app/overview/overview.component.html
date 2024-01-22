@@ -1,0 +1,32 @@
+<div class="overview-boxes">
+  <div class="box">
+    <div class="right-side">
+      <div class="number">Message</div>
+      <div class="box-topic">Parent to Child</div>
+      <div class="indicator">
+        <i class="bx bx-up-arrow-alt"></i>
+        <!-- <span class="text">{{childMessage}}</span> -->
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="right-side">
+      <div class="number">Message</div>
+      <div class="box-topic">Child to Parent</div>
+      <div class="indicator">
+        <i class="bx bx-up-arrow-alt"></i>
+        <span class="text">Child component I'm your Parent component : {{messageReceiveFromChild}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="right-side">
+      <div class="number">Message</div>
+      <div class="box-topic">Async Pipe</div>
+      <div class="indicator">
+        <i class="bx bx-up-arrow-alt"></i>
+        <span class="text">{{ myObservable | async}}</span>
+      </div>
+    </div>
+  </div>
+</div>
