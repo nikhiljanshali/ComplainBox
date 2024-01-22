@@ -8,6 +8,9 @@ import { delay, of } from 'rxjs';
 })
 export class OverviewComponent implements OnInit {
 
+  public myObservableText = "This is my Observable Text";
+
+  @Input() childMessage: string | undefined;
   @Input() messageReceiveFromChild: string | undefined;
 
   public myObservable: any
@@ -15,7 +18,7 @@ export class OverviewComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.myObservable = of('Some text').pipe(delay(3000))
+    this.myObservable = of(this.myObservableText).pipe(delay(3000))
   }
 
 }

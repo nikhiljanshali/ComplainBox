@@ -110,7 +110,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    this.parentMessage = "Child component I'm your Parent component";
+    this.parentMessage = "Child component I'm your Parent component(Home)";
   }
 
   receiveMessage($event: any) {

@@ -12,6 +12,7 @@ import { LeftsidebarComponent } from './common/component/leftsidebar/leftsidebar
 import { HomeComponent } from './home/home.component';
 import { OverviewComponent } from './overview/overview.component';
 import { SalesboxComponent } from './salesbox/salesbox.component';
+import { LoginComponent } from './authentication/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SalesboxComponent } from './salesbox/salesbox.component';
     HomeComponent,
     OverviewComponent,
     SalesboxComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,10 +10,10 @@ export class AppComponent {
   title = 'Coding Labs';
 
   constructor(private titleService: Title) {
-    console.log(this.title);
+    console.log('%c Coding Labs! ', 'background: #222; color: #bada55');
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this.titleService.setTitle(this.title);
   }
 }
